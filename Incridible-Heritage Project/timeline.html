@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Incredible Indian Heritage — Timeline</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fffaf3;
+      --accent:#8b3a3a;
+      --gold:#d6b45c;
+      --muted:#6b6b6b;
+      --radius:14px;
+      --maxw:900px;
+    }
+    body{background:var(--bg);font-family:Montserrat,sans-serif;color:#222;line-height:1.5;padding-bottom:60px}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--gold));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:Merriweather,serif}
+    nav ul{list-style:none;display:flex;gap:18px}
+    nav a{text-decoration:none;color:var(--muted);font-weight:600;padding:8px 12px;border-radius:10px;transition:.3s}
+    nav a:hover{color:var(--accent);background:#fff6e3}
+
+    section h2{text-align:center;font-family:Merriweather,serif;font-size:28px;color:var(--accent);margin-top:40px;margin-bottom:16px}
+
+    .timeline{position:relative;max-width:900px;margin:50px auto}
+    .timeline::after{content:'';position:absolute;width:4px;background-color:var(--accent);top:0;bottom:0;left:50%;margin-left:-2px}
+
+    .container-timeline{padding:20px 30px;position:relative;background:#fff;border-radius:16px;width:45%;box-shadow:0 8px 30px rgba(0,0,0,0.08);margin-bottom:30px;transition:.4s ease}
+    .container-timeline:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 16px 40px rgba(0,0,0,0.15)}
+    .container-timeline img{width:100%;border-radius:12px;margin-bottom:12px;transition:transform .4s ease}
+    .container-timeline:hover img{transform:scale(1.05)}
+    .container-timeline h3{font-family:Merriweather,serif;color:var(--accent);margin-bottom:8px}
+    .container-timeline p{color:var(--muted);font-size:14px;line-height:1.5}
+
+    .left{left:0}
+    .right{left:55%}
+    .container-timeline::before{content:"";position:absolute;width:20px;height:20px;background-color:var(--gold);border-radius:50%;top:20px;right:-10px;z-index:1}
+    .right::before{left:-10px}
+
+    @media screen and (max-width:768px){
+      .container-timeline{width:90%;left:0!important}
+      .timeline::after{left:20px}
+      .container-timeline::before{left:12px}
+    }
+
+    footer{position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,0.95);box-shadow:0 -6px 20px rgba(0,0,0,0.05)}
+    footer .container{display:flex;align-items:center;justify-content:space-between;padding:12px 28px}
+    footer small{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header class="container">
+    <a class="brand" href="index.html">
+      <div class="logo">IH</div>
+      <div>
+        <div style="font-family:Merriweather,serif;font-weight:700">Incredible Indian Heritage</div>
+        <div style="font-size:12px;color:var(--muted)">Explore. Learn. Preserve.</div>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Indian Heritage Timeline</h1>
+    </section>
+
+    <section>
+      <h2>Chronological Journey of India</h2>
+      <div class="timeline">
+
+        <div class="container-timeline left">
+          <img src="images/timeline1.jpg" alt="Indus Valley Civilization">
+          <h3>Indus Valley Civilization (~3300–1300 BCE)</h3>
+          <p>The Indus Valley Civilization was one of the world’s earliest urban cultures, centered in present-day Pakistan and northwest India. Cities like Mohenjo-daro and Harappa featured planned streets, advanced drainage systems, and remarkable craftsmanship. Their trade networks and standardized weights reflect a sophisticated society thriving on agriculture, trade, and craftwork.</p>
+        </div>
+
+        <div class="container-timeline right">
+          <img src="images/timeline2.jpg" alt="Maurya Empire">
+          <h3>Maurya Empire (321–185 BCE)</h3>
+          <p>Founded by Chandragupta Maurya, the Maurya Empire united much of the Indian subcontinent. Emperor Ashoka promoted Buddhism after the Kalinga war and left behind magnificent pillars and edicts that convey moral and administrative guidance. The Mauryas were known for centralized governance, trade, and cultural achievements.</p>
+        </div>
+
+        <div class="container-timeline left">
+          <img src="images/timeline3.jpg" alt="Gupta Empire">
+          <h3>Gupta Empire (c. 320–550 CE)</h3>
+          <p>Known as the “Golden Age of India,” the Gupta period saw remarkable advancements in science, mathematics, astronomy, art, and literature. Temples and sculptures flourished, and classical Sanskrit literature thrived. This era established enduring cultural, intellectual, and artistic traditions that influenced India for centuries.</p>
+        </div>
+
+        <div class="container-timeline right">
+          <img src="images/timeline4.jpg" alt="Delhi Sultanate">
+          <h3>Delhi Sultanate (1206–1526 CE)</h3>
+          <p>The Delhi Sultanate marked the rule of various Muslim dynasties in Northern India. Architectural wonders like Qutub Minar and many mosques were constructed, and Persian-influenced culture, language, and administrative practices spread. This era shaped the political and cultural landscape of medieval India.</p>
+        </div>
+
+        <div class="container-timeline left">
+          <img src="images/timeline5.jpg" alt="Mughal Era">
+          <h3>Mughal Era (1526–1857 CE)</h3>
+          <p>The Mughal Empire brought centralized governance, monumental architecture, and rich cultural syncretism. Iconic structures like the Taj Mahal, forts, and gardens were built. The Mughal rulers promoted arts, literature, and architecture, leaving a lasting legacy that blends Persian and Indian influences.</p>
+        </div>
+
+        <div class="container-timeline right">
+          <img src="images/timeline6.jpg" alt="Maratha Empire">
+          <h3>Maratha Empire (1674–1818 CE)</h3>
+          <p>Founded by Chhatrapati Shivaji Maharaj, the Maratha Empire established a strong regional power in western India. Shivaji’s innovative military tactics, naval strength, and fort constructions challenged the Mughal authority. The Marathas promoted self-governance, local administration, and cultural pride across Maharashtra and beyond.</p>
+        </div>
+
+        <div class="container-timeline left">
+          <img src="images/timeline8.jpg" alt="British Raj">
+          <h3>British Raj (1858–1947 CE)</h3>
+          <p>The British Raj formalized colonial rule over India after the decline of the Mughal Empire. India underwent economic, social, and political changes under British administration, including railways, legal systems, and education reforms. Resistance movements emerged, ultimately leading to India’s struggle for independence.</p>
+        </div>
+
+        <div class="container-timeline right">
+          <img src="images/timeline7.jpg" alt="Modern India">
+          <h3>Modern India (1947–Present)</h3>
+          <p>Post-independence, India emerged as a democratic republic preserving its cultural heritage while embracing modernization. Restoration of historical monuments, promotion of festivals, arts, and crafts, and initiatives in education and technology highlight India’s ongoing journey of development and cultural pride.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 Incredible Indian Heritage — Created for Application Development Practices</small>
+    </div>
+  </footer>
+</body>
+</html>

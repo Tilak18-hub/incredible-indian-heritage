@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Incredible Indian Heritage — Places</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fffaf3;
+      --accent:#8b3a3a;
+      --gold:#d6b45c;
+      --muted:#6b6b6b;
+      --radius:14px;
+      --maxw:1100px;
+    }
+    body{background:var(--bg);font-family:Montserrat,system-ui,sans-serif;color:#222;line-height:1.5;padding-bottom:60px}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--gold));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:Merriweather,serif}
+    nav ul{list-style:none;display:flex;gap:18px}
+    nav a{text-decoration:none;color:var(--muted);font-weight:600;padding:8px 12px;border-radius:10px;transition:.3s}
+    nav a:hover{color:var(--accent);background:#fff6e3}
+
+    .hero{background-image:url('images/tajmahal.jpg');background-size:cover;background-position:center;border-radius:var(--radius);overflow:hidden;position:relative;height:320px;box-shadow:0 12px 40px rgba(0,0,0,0.1)}
+    .hero::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.4)}
+    .hero h1{position:absolute;bottom:30px;left:40px;color:#fff;font-family:Merriweather,serif;font-size:36px;text-shadow:2px 2px 6px rgba(0,0,0,0.5)}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px;margin-top:30px}
+    .card{background:#fff;border-radius:12px;box-shadow:0 8px 24px rgba(0,0,0,0.08);overflow:hidden;transition:.3s;cursor:pointer}
+    .card:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 18px 40px rgba(0,0,0,0.15)}
+    .card img{width:100%;height:190px;object-fit:cover;transition:transform .4s ease}
+    .card:hover img{transform:scale(1.05)}
+    .card-content{padding:16px}
+    .card-content h3{font-family:Merriweather,serif;color:var(--accent);font-size:20px;margin-bottom:8px}
+    .card-content p{color:var(--muted);font-size:14px}
+
+    footer{position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,0.95);box-shadow:0 -6px 20px rgba(0,0,0,0.05)}
+    footer .container{display:flex;align-items:center;justify-content:space-between;padding:12px 28px}
+    footer small{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header class="container">
+    <a class="brand" href="index.html">
+      <div class="logo">IH</div>
+      <div>
+        <div style="font-family:Merriweather,serif;font-weight:700">Incredible Indian Heritage</div>
+        <div style="font-size:12px;color:var(--muted)">Explore. Learn. Preserve.</div>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Famous Monuments of India</h1>
+    </section>
+
+    <section class="grid">
+      <article class="card">
+        <img src="images/tajmahal.jpg" alt="Taj Mahal">
+        <div class="card-content">
+          <h3>Taj Mahal, Agra</h3>
+          <p>A symbol of love built by Shah Jahan for Mumtaz Mahal, known for its white marble beauty and Mughal architecture.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/qutubminar.jpg" alt="Qutub Minar">
+        <div class="card-content">
+          <h3>Qutub Minar, Delhi</h3>
+          <p>World’s tallest brick minaret, showcasing Indo-Islamic architecture with detailed carvings and verses.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/hampi.jpg" alt="Hampi">
+        <div class="card-content">
+          <h3>Hampi, Karnataka</h3>
+          <p>The remains of the Vijayanagara Empire, a UNESCO World Heritage Site known for its temple complexes and stone structures.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/konark.jpg" alt="Konark Sun Temple">
+        <div class="card-content">
+          <h3>Konark Sun Temple, Odisha</h3>
+          <p>Famous for its chariot-shaped structure dedicated to the Sun God, representing the peak of Kalinga architecture.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/gateway.jpg" alt="Gateway of India">
+        <div class="card-content">
+          <h3>Gateway of India, Mumbai</h3>
+          <p>Iconic arch monument built during the 20th century to commemorate King George V and Queen Mary’s visit to India.</p>
+        </div>
+      </article>
+
+      <article class="card">
+        <img src="images/amberfort.jpg" alt="Amber Fort">
+        <div class="card-content">
+          <h3>Amber Fort, Jaipur</h3>
+          <p>Magnificent hilltop fort known for its artistic Hindu-style architecture and panoramic views of Jaipur city.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 Incredible Indian Heritage — Created for Application Development Practices</small>
+      <div style="display:flex;gap:14px;color:var(--muted)"><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">Twitter</a></div>
+    </div>
+  </footer>
+</body>
+</html>

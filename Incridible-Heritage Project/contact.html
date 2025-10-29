@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Incredible Indian Heritage — Contact</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fffaf3;
+      --accent:#8b3a3a;
+      --muted:#6b6b6b;
+      --radius:12px;
+      --maxw:900px;
+    }
+    body{background:var(--bg);font-family:Montserrat,sans-serif;color:#222;line-height:1.5;padding-bottom:60px}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),#d6b45c);display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:Merriweather,serif}
+    nav ul{list-style:none;display:flex;gap:18px}
+    nav a{text-decoration:none;color:var(--muted);font-weight:600;padding:8px 12px;border-radius:10px;transition:.3s}
+    nav a:hover{color:var(--accent);background:#fff6e3}
+
+    section h2{text-align:center;font-family:Merriweather,serif;font-size:28px;color:var(--accent);margin-top:40px;margin-bottom:16px}
+
+    .contact-info{display:flex;flex-direction:column;gap:14px;font-size:16px;margin-bottom:40px;text-align:center}
+    .contact-info a{color:var(--accent);text-decoration:none}
+
+    form{display:flex;flex-direction:column;gap:16px;max-width:600px;margin:0 auto}
+    input, textarea{padding:12px;border-radius:10px;border:1px solid #ccc;font-size:14px;font-family:Montserrat,sans-serif}
+    input:focus, textarea:focus{outline:none;border-color:var(--accent)}
+    button{padding:14px 24px;background:var(--accent);color:white;border:none;border-radius:10px;font-size:16px;cursor:pointer;transition:.3s}
+    button:hover{background:#d65b5b}
+
+    footer{position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,0.95);box-shadow:0 -6px 20px rgba(0,0,0,0.05)}
+    footer .container{display:flex;align-items:center;justify-content:space-between;padding:12px 28px}
+    footer small{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header class="container">
+    <a class="brand" href="index.html">
+      <div class="logo">IH</div>
+      <div>
+        <div style="font-family:Merriweather,serif;font-weight:700">Incredible Indian Heritage</div>
+        <div style="font-size:12px;color:var(--muted)">Explore. Learn. Preserve.</div>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2>Contact Us</h2>
+      <div class="contact-info">
+        <p>📍 Address: 123 Heritage Street, India</p>
+        <p>📧 Email: <a href="mailto:info@indianheritage.com">info@indianheritage.com</a></p>
+        <p>📞 Phone: +91 9876543210</p>
+        <p>🌐 Follow us: <a href="#">Facebook</a> | <a href="#">Instagram</a> | <a href="#">Twitter</a></p>
+      </div>
+
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <input type="text" placeholder="Subject" required>
+        <textarea rows="5" placeholder="Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 Incredible Indian Heritage — Created for Application Development Practices</small>
+      <div style="display:flex;gap:14px;color:var(--muted)"><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">Twitter</a></div>
+    </div>
+  </footer>
+</body>
+</html>

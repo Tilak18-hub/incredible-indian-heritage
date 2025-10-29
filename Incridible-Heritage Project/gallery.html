@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Incredible Indian Heritage — Gallery</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&family=Montserrat:wght@300;600&display=swap" rel="stylesheet">
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --bg:#fffaf3;
+      --accent:#8b3a3a;
+      --gold:#d6b45c;
+      --muted:#6b6b6b;
+      --radius:14px;
+      --maxw:1100px;
+    }
+    body{background:var(--bg);font-family:Montserrat,sans-serif;color:#222;line-height:1.5;padding-bottom:60px}
+    .container{max-width:var(--maxw);margin:0 auto;padding:28px}
+
+    header{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+    .brand{display:flex;align-items:center;gap:12px;text-decoration:none;color:inherit}
+    .logo{width:52px;height:52px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--gold));display:flex;align-items:center;justify-content:center;color:white;font-weight:700;font-family:Merriweather,serif}
+    nav ul{list-style:none;display:flex;gap:18px}
+    nav a{text-decoration:none;color:var(--muted);font-weight:600;padding:8px 12px;border-radius:10px;transition:.3s}
+    nav a:hover{color:var(--accent);background:#fff6e3}
+
+    .hero{background-image:url('images/gallery1.jpg');background-size:cover;background-position:center;border-radius:var(--radius);overflow:hidden;position:relative;height:340px;box-shadow:0 12px 40px rgba(0,0,0,0.1)}
+    .hero::before{content:'';position:absolute;inset:0;background:rgba(0,0,0,0.4)}
+    .hero h1{position:absolute;bottom:30px;left:40px;color:#fff;font-family:Merriweather,serif;font-size:38px;text-shadow:2px 2px 6px rgba(0,0,0,0.5)}
+
+    section h2{text-align:center;font-family:Merriweather,serif;font-size:28px;color:var(--accent);margin-top:40px;margin-bottom:16px}
+
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:26px;margin-top:20px}
+    .card{border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,0.08);transition:.4s ease;background:#fff}
+    .card:hover{transform:translateY(-6px) scale(1.02);box-shadow:0 16px 40px rgba(0,0,0,0.15)}
+    .card img{width:100%;height:260px;object-fit:cover;transition:transform .4s ease}
+    .card:hover img{transform:scale(1.05)}
+    .card-content{padding:16px}
+    .card-content h3{font-family:Merriweather,serif;color:var(--accent);font-size:20px;margin-bottom:8px}
+    .card-content p{color:var(--muted);font-size:14px;line-height:1.5}
+
+    footer{position:fixed;bottom:0;left:0;right:0;background:rgba(255,255,255,0.95);box-shadow:0 -6px 20px rgba(0,0,0,0.05)}
+    footer .container{display:flex;align-items:center;justify-content:space-between;padding:12px 28px}
+    footer small{color:var(--muted)}
+  </style>
+</head>
+<body>
+  <header class="container">
+    <a class="brand" href="index.html">
+      <div class="logo">IH</div>
+      <div>
+        <div style="font-family:Merriweather,serif;font-weight:700">Incredible Indian Heritage</div>
+        <div style="font-size:12px;color:var(--muted)">Explore. Learn. Preserve.</div>
+      </div>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="places.html">Places</a></li>
+        <li><a href="culture.html">Culture</a></li>
+        <li><a href="timeline.html">Timeline</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Gallery of Indian Heritage</h1>
+    </section>
+
+    <section>
+      <h2>Explore Unique Aspects of India</h2>
+      <div class="grid">
+
+        <div class="card">
+          <img src="images/gallery1.jpg" alt="Traditional Rajasthani Puppet">
+          <div class="card-content">
+            <h3>Rajasthani Puppet</h3>
+            <p>These traditional puppets, called Kathputli, are used in folk performances to narrate stories, legends, and moral lessons. They are vibrant, handcrafted, and an essential part of Rajasthan’s cultural heritage.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/gallery2.jpg" alt="Madhubani Painting">
+          <div class="card-content">
+            <h3>Madhubani Painting</h3>
+            <p>Madhubani art originates from Bihar and is known for its intricate geometric patterns, natural dyes, and depiction of mythology, nature, and rituals. It’s traditionally done on walls and floors, now also on paper and cloth.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/gallery3.jpg" alt="Onam Festival">
+          <div class="card-content">
+            <h3>Onam Festival</h3>
+            <p>Onam is a harvest festival celebrated in Kerala with elaborate floral arrangements (Pookalam), traditional dances, boat races, and grand feasts known as Onasadya, symbolizing prosperity and cultural unity.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/gallery4.jpg" alt="Pushkar Camel Fair">
+          <div class="card-content">
+            <h3>Pushkar Camel Fair</h3>
+            <p>The Pushkar Fair in Rajasthan is one of the world’s largest camel fairs. It features livestock trading, folk performances, competitions, and vibrant celebrations attracting tourists and locals alike.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/gallery5.jpg" alt="Indian Street Market">
+          <div class="card-content">
+            <h3>Street Market</h3>
+            <p>Indian street markets are bustling hubs of colors, spices, textiles, and handicrafts. They reflect the local lifestyle, vibrant culture, and the everyday life of millions of people across the country.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/gallery6.jpg" alt="Bengal Tiger in Wild">
+          <div class="card-content">
+            <h3>Bengal Tiger</h3>
+            <p>The Bengal tiger is India’s national animal and can be spotted in national parks and wildlife sanctuaries. It symbolizes strength, power, and India’s commitment to wildlife conservation.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/gallery7.jpg" alt="Peacock Display">
+          <div class="card-content">
+            <h3>Peacock Display</h3>
+            <p>The Indian peacock, the national bird, is renowned for its vibrant feathers and elegant courtship dance. It appears in folklore, art, and decorations throughout India.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="images/gallery8.jpg" alt="South Indian Temple Carvings">
+          <div class="card-content">
+            <h3>Temple Carvings</h3>
+            <p>South Indian temples are famous for intricate stone carvings depicting gods, mythological stories, and cultural motifs. They reflect centuries of devotion, architecture, and craftsmanship.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 Incredible Indian Heritage — Created for Application Development Practices</small>
+      <div style="display:flex;gap:14px;color:var(--muted)"><a href="#">Facebook</a><a href="#">Instagram</a><a href="#">Twitter</a></div>
+    </div>
+  </footer>
+</body>
+</html>
